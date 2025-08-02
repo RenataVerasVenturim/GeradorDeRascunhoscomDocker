@@ -8,7 +8,7 @@ Extrai dados de pdfs de notas de empenho para rascunhos de liquidação
 
 <b>Clonar projeto</b>
 
-    git clone  https://github.com/RenataVerasVenturim/GeradorDeRascunhos.git
+    git clone  https://github.com/GeradorDeRascunhoscomDocker.git
 
 <b>Acessar pasta do projeto (verifique o seu)</b>
 
