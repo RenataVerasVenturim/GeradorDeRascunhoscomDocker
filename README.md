@@ -36,6 +36,39 @@ Extrai dados de pdfs de notas de empenho para rascunhos de liquidação
 <b> OU para rodar sem prender terminal:</b>
     
     docker run --name [nome_container] -p5000:5000 -d [nome_imagem]
+    
+
+<b>Distruibuir imagem</b>
+
+<b>1- Salvar imagem em um arquivo .tar e distribuir via pendrive, drive, e mail:</b>
+
+    docker save -o meuapp.tar projeto-docker-teste
+
+<b>Abrir arquivo em MAC, WINDOWS, LINUX</b>
+
+<b>gerar imagem</b>
+    
+    docker load -i meuapp.tar
+
+<b>criar container</b>
+
+    docker run --name meuapp -p 5000:5000 -d projeto-docker-teste
+
+<b>2- Publicar no Docker Hub</b>
+
+    docker login
+
+    docker tag projeto-docker-teste renataveras/projeto-docker-teste:latest 
+    
+    docker push renataveras/projeto-docker-teste:latest
+
+<b>Abrir arquivo em MAC, WINDOWS, LINUX</b>
+
+*puxar imagem do Docker Hub
+    docker pull renataveras/projeto-docker-teste:latest
+
+*criar container
+    docker run --name apprecebido -p5000:5000 -d renataveras/projeto-docker-teste  
 
 <b> Se quiser, gerar um app executável para windows</b>
 
