@@ -31,7 +31,9 @@ Extrai dados de pdfs de notas de empenho para rascunhos de liquidação
 
 <b> Criar container com docker
 
-    docker run -p 5000:5000 gerador-rascunhos
+    docker run -p 5000:5000 [nome_imagem]
+    OU para rodar sem prender terminal:
+    docker run --name [nome_container] -p5000:5000 -d [nome_imagem]
 
 <b> Se quiser, gerar um app executável para windows</b>
 
