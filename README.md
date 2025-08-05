@@ -25,14 +25,16 @@ Extrai dados de pdfs de notas de empenho para rascunhos de liquidação
     
     python app.py
 
-<b> Abrir DOCKER DESKTOP e criar imagem via terminal do VS CODE 
+<b> Abrir DOCKER DESKTOP e criar imagem via terminal do VS CODE </b>
 
     docker build -t gerador-rascunhos .  
 
-<b> Criar container com docker
+<b> Criar container com docker</b>
 
     docker run -p 5000:5000 [nome_imagem]
-    OU para rodar sem prender terminal:
+    
+<b> OU para rodar sem prender terminal:</b>
+    
     docker run --name [nome_container] -p5000:5000 -d [nome_imagem]
 
 <b> Se quiser, gerar um app executável para windows</b>
